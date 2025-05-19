@@ -1,0 +1,429 @@
+/**
+ * Public styles for the Product Filter Plugin
+ * These styles are designed to be non-intrusive and work with most themes
+ */
+
+/* Form - using more specific selectors */
+body .product-filter-form {
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Main container - using more specific selectors */
+body .product-filter-container {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+    /* Using lighter styling that won't override theme styles aggressively */
+    background: transparent;
+    border: none;
+}
+
+/* Filter wrapper - more specific selector */
+body .product-filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Filter sections - more specific selector */
+body .product-filter-section {
+    margin-bottom: 15px;
+}
+
+body .product-filter-section h4 {
+    margin: 0 0 8px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+body .product-filter-section h5 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Lists - more specific selector */
+body .product-filter-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body .product-filter-section li {
+    margin-bottom: 6px;
+}
+
+body .product-filter-section label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+body .product-filter-section input[type="checkbox"],
+body .product-filter-section input[type="radio"] {
+    margin-right: 6px;
+}
+
+/* Count - more specific selector */
+body .product-filter-section .count {
+    margin-left: 4px;
+    color: rgba(0,0,0,0.5);
+    font-size: 12px;
+}
+
+/* Price slider - more specific selectors */
+body .price-slider-container {
+    padding: 8px 4px;
+}
+
+body .price-slider {
+    margin: 8px 0 15px;
+    height: 4px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 2px;
+    position: relative;
+}
+
+body .price-slider .ui-slider-range {
+    background: rgba(0,0,0,0.3);
+    height: 4px;
+    position: absolute;
+}
+
+body .price-slider .ui-slider-handle {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    margin-left: -7px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+body .price-slider .ui-slider-handle:hover,
+body .price-slider .ui-slider-handle:focus {
+    background: #fafafa;
+}
+
+body .price-slider-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+/* Rating filter - more specific selectors */
+body .product-filter-rating .star {
+    color: #f0c000;
+    font-size: 14px;
+    margin-right: 1px;
+}
+
+body .product-filter-rating .rating-text {
+    margin-left: 4px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.6);
+}
+
+/* Reset button - more specific selectors */
+body .product-filter-reset {
+    margin-bottom: 12px;
+}
+
+body .product-filter-reset a {
+    display: inline-block;
+    padding: 4px 8px;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+}
+
+body .product-filter-reset a:hover {
+    background: rgba(0,0,0,0.08);
+}
+
+/* Submit button - more specific selectors */
+body .product-filter-submit {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Using the theme's button styling by default */
+body .product-filter-submit .button {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Mobile toggle button - more specific selectors */
+body .product-filter-toggle-mobile {
+    display: none;
+    width: 100%;
+    padding: 8px 12px;
+    background: rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    text-align: left;
+    font-weight: normal;
+    cursor: pointer;
+    margin-bottom: 12px;
+    position: relative;
+    font-size: 13px;
+}
+
+body .product-filter-toggle-mobile:after {
+    content: '\25BC';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 9px;
+}
+
+body .product-filter-toggle-mobile.active:after {
+    content: '\25B2';
+}
+
+/* Filter styles - more specific selectors */
+
+/* Default style */
+body .filter-style-default .product-filter-section {
+    background: transparent;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+/* Minimal style */
+body .filter-style-minimal .product-filter-section {
+    background: transparent;
+    padding: 0;
+    border: none;
+    margin-bottom: 15px;
+}
+
+body .filter-style-minimal .product-filter-section h4 {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding-bottom: 4px;
+}
+
+/* Boxed style */
+body .filter-style-boxed .product-filter-section {
+    background: rgba(0,0,0,0.03);
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+}
+
+body .filter-style-boxed .product-filter-section h4 {
+    background: rgba(0,0,0,0.05);
+    margin: -10px -10px 10px -10px;
+    padding: 8px 10px;
+    border-radius: 3px 3px 0 0;
+    border-bottom: none;
+}
+
+/* Search filter styles */
+body .product-filter-search .search-input-container {
+    margin-bottom: 15px;
+}
+
+body .product-filter-search input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body .product-filter-search input[type="text"]:focus {
+    border-color: rgba(0,0,0,0.3);
+    outline: none;
+}
+
+/* Loading indicator */
+.product-filter-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.03);
+    border-radius: 3px;
+}
+
+.product-filter-loading .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+    border-top: 2px solid rgba(0,0,0,0.4);
+    border-radius: 50%;
+    animation: product-filter-spin 1s linear infinite;
+}
+
+.product-filter-loading .text {
+    font-size: 14px;
+    color: rgba(0,0,0,0.7);
+}
+
+@keyframes product-filter-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Preserve product layout when filtering */
+body.filtering .products {
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+/* Ensure product grid layout is maintained */
+body .products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+body .products > li.product {
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive styles - more specific selectors */
+@media (max-width: 768px) {
+    body .product-filter-toggle-mobile {
+        display: block;
+    }
+
+    body .product-filter-wrapper {
+        display: none;
+    }
+
+    body .product-filter-toggle-mobile.active + .product-filter-wrapper {
+        display: block;
+    }
+
+    /* Mobile accordion */
+    body .mobile-display-accordion .product-filter-section h4 {
+        cursor: pointer;
+        position: relative;
+    }
+
+    body .mobile-display-accordion .product-filter-section h4:after {
+        content: '\25BC';
+        position: absolute;
+        right: 0;
+        font-size: 9px;
+    }
+
+    body .mobile-display-accordion .product-filter-section h4.active:after {
+        content: '\25B2';
+    }
+
+    body .mobile-display-accordion .product-filter-section .filter-content {
+        display: none;
+    }
+
+    body .mobile-display-accordion .product-filter-section h4.active + .filter-content {
+        display: block;
+    }
+
+    /* Mobile offcanvas */
+    body .mobile-display-offcanvas .product-filter-wrapper {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        width: 260px;
+        height: 100%;
+        background: #fff;
+        z-index: 999;
+        padding: 15px;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    body .mobile-display-offcanvas .product-filter-wrapper.active {
+        left: 0;
+    }
+
+    body .mobile-display-offcanvas .filter-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 998;
+    }
+
+    body .mobile-display-offcanvas .filter-overlay.active {
+        display: block;
+    }
+
+    body .mobile-display-offcanvas .filter-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    /* Mobile dropdown */
+    body .mobile-display-dropdown .product-filter-section {
+        margin-bottom: 5px;
+    }
+
+    body .mobile-display-dropdown .product-filter-section h4 {
+        background: rgba(0,0,0,0.03);
+        padding: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 3px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    body .mobile-display-dropdown .product-filter-section h4:after {
+        content: '\25BC';
+        position: absolute;
+        right: 8px;
+        font-size: 9px;
+    }
+
+    body .mobile-display-dropdown .product-filter-section h4.active:after {
+        content: '\25B2';
+    }
+
+    body .mobile-display-dropdown .product-filter-section .filter-content {
+        display: none;
+        padding: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-top: none;
+        border-radius: 0 0 3px 3px;
+    }
+
+    body .mobile-display-dropdown .product-filter-section h4.active + .filter-content {
+        display: block;
+    }
+}
