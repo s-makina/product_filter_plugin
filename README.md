@@ -157,7 +157,7 @@ The plugin provides several action and filter hooks for developers to extend its
 
 ## Support
 
-For support, please contact us at support@example.com or visit our website at https://example.com/support.
+For support, please contact us at salvation.developer@gmail.com or visit our website at https://mziwi.com/support.
 
 ## Changelog
 
